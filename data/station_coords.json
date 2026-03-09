@@ -1,0 +1,622 @@
+{
+  "Acerra Scuola Caporale": {
+    "lat": 40.9071,
+    "lon": 14.3429,
+    "tried": [
+      "Acerra Scuola Caporale",
+      "Acerra Scuola Caporale, Napoli, Italy",
+      "Acerra Scuola Caporale, Italy"
+    ]
+  },
+  "Acerra Zona Industriale": {
+    "lat": 40.9847962,
+    "lon": 14.3679606,
+    "display_name": "Zona Industriale ASI di Acerra, Acerra, Napoli, Campania, Italia"
+  },
+  "Ariano Irpino Stadio": {
+    "lat": 41.1555975,
+    "lon": 15.0967062,
+    "display_name": "Stadio Comunale Silvio Renzulli, Viale Tigli, Ariano Irpino, Avellino, Campania, 83031, Italia"
+  },
+  "Avellino AV41 Sc. V Circolo °": {
+    "lat": 40.9152,
+    "lon": 14.7955,
+    "tried": [
+      "Avellino AV41 Sc. V Circolo °",
+      "Avellino AV41 Sc V Circolo",
+      "Avellino AV41 Sc. V Circolo °, Avellino, Italy",
+      "Avellino AV41 Sc V Circolo, Avellino, Italy",
+      "Avellino AV41 Sc. V Circolo °, Italy"
+    ]
+  },
+  "Avellino Scuola Alighieri": {
+    "lat": 40.9190395,
+    "lon": 14.784947,
+    "display_name": "Scuola Secondaria \"Dante Alighieri\", Via Benedetto Croce, Partenio, Avellino, Campania, 83100, Italia"
+  },
+  "Aversa Scuola Cirillo °": {
+    "lat": 40.9758352,
+    "lon": 14.2117669,
+    "display_name": "Liceo Classico Domenico Cirillo, Via Vittorio Colonna, Bagno d'Aversa, Aversa, Caserta, Campania, 81031, Italia"
+  },
+  "Battipaglia Parco Fiume": {
+    "lat": 40.6167,
+    "lon": 14.9833,
+    "tried": [
+      "Battipaglia Parco Fiume",
+      "Battipaglia Parco Fiume, Italy"
+    ]
+  },
+  "Benevento BN32 Via Mustilli": {
+    "lat": 41.1317868,
+    "lon": 14.7885516,
+    "display_name": "Via Domenico Mustilli, Trescene, Ponticelli, Benevento, Campania, 82100, Italia"
+  },
+  "Benevento Campo Sportivo": {
+    "lat": 41.2315276,
+    "lon": 14.5332703,
+    "display_name": "Campo sportivo, Strada Provinciale 15 di Telese Terme, Telese Terme, Benevento, Campania, 82037, Italia"
+  },
+  "Benevento Zona Industriale °": {
+    "lat": 41.2293368,
+    "lon": 14.4782074,
+    "display_name": "Zona Industriale Cese Nove, San Salvatore Telesino, Benevento, Campania, 82031, Italia"
+  },
+  "Caserta CE51 Ist. Manzoni": {
+    "lat": 41.0818,
+    "lon": 14.3349,
+    "tried": [
+      "Caserta CE51 Ist. Manzoni",
+      "Caserta CE51 Ist Manzoni",
+      "Caserta CE51 Ist. Manzoni, Caserta, Italy",
+      "Caserta CE51 Ist Manzoni, Caserta, Italy",
+      "Caserta CE51 Ist. Manzoni, Italy"
+    ]
+  },
+  "Caserta CE52 Sc. De Amicis": {
+    "lat": 41.0085302,
+    "lon": 14.0787912,
+    "display_name": "Via Edmondo De Amicis, Villa Literno, Masseria Arsa, Villa Literno, Caserta, Campania, 81033, Italia"
+  },
+  "Casoria Scuola Palizzi": {
+    "lat": 40.9040,
+    "lon": 14.2890,
+    "tried": [
+      "Casoria Scuola Palizzi",
+      "Casoria Scuola Palizzi, Napoli, Italy",
+      "Casoria Scuola Palizzi, Italy"
+    ]
+  },
+  "Cava dei Tirreni Stadio": {
+    "lat": 40.7125,
+    "lon": 14.6380,
+    "tried": [
+      "Cava dei Tirreni Stadio",
+      "Cava dei Tirreni Stadio, Italy"
+    ]
+  },
+  "Maddaloni CE54 Sc. Settembrini": {
+    "lat": 41.0940,
+    "lon": 14.4020,
+    "tried": [
+      "Maddaloni CE54 Sc. Settembrini",
+      "Maddaloni CE54 Sc Settembrini",
+      "Maddaloni CE54 Sc. Settembrini, Caserta, Italy",
+      "Maddaloni CE54 Sc Settembrini, Caserta, Italy",
+      "Maddaloni CE54 Sc. Settembrini, Italy"
+    ]
+  },
+  "Napoli NA01 Oss. Astronomico": {
+    "lat": 40.8530,
+    "lon": 14.3050,
+    "tried": [
+      "Napoli NA01 Oss. Astronomico",
+      "Napoli NA01 Oss Astronomico",
+      "Napoli NA01 Oss. Astronomico, Napoli, Italy",
+      "Napoli NA01 Oss Astronomico, Napoli, Italy",
+      "Napoli NA01 Oss. Astronomico, Italy"
+    ]
+  },
+  "Napoli NA02 Osp. Santobono °": {
+    "lat": 40.8554,
+    "lon": 14.2231,
+    "tried": [
+      "Napoli NA02 Osp. Santobono °",
+      "Napoli NA02 Osp Santobono",
+      "Napoli NA02 Osp. Santobono °, Napoli, Italy",
+      "Napoli NA02 Osp Santobono, Napoli, Italy",
+      "Napoli NA02 Osp. Santobono °, Italy"
+    ]
+  },
+  "Napoli NA06 Museo Nazionale": {
+    "lat": 40.8536064,
+    "lon": 14.25115,
+    "display_name": "Museo archeologico nazionale di Napoli, 19, Piazza Museo Nazionale, Stella, Municipalità 3, Napoli, Campania, 80135, Italia"
+  },
+  "Napoli NA07 Ferrovia °": {
+    "lat": 40.8277815,
+    "lon": 14.3989433,
+    "display_name": "Ferrovia Vesuviana, SP140, Ercolano, Napoli, Campania, 80040, Italia"
+  },
+  "Napoli NA08 Osp. N. Pellegrini": {
+    "lat": 40.8535,
+    "lon": 14.2350,
+    "tried": [
+      "Napoli NA08 Osp. N. Pellegrini",
+      "Napoli NA08 Osp N Pellegrini",
+      "Napoli NA08 Osp. N. Pellegrini, Napoli, Italy",
+      "Napoli NA08 Osp N Pellegrini, Napoli, Italy",
+      "Napoli NA08 Osp. N. Pellegrini, Italy"
+    ]
+  },
+  "Napoli NA09 Via Argine": {
+    "lat": 40.8560636,
+    "lon": 14.3234622,
+    "display_name": "Via Argine, Ponticelli, Municipalità 6, Napoli, Campania, 80147, Italia"
+  },
+  "Napoli Parco Virgiliano": {
+    "lat": 40.7984999,
+    "lon": 14.1790765,
+    "display_name": "Parco Virgiliano, Municipalità 1, Coroglio, Napoli, Campania, Italia"
+  },
+  "Napoli via Epomeo *°": {
+    "lat": 40.7205434,
+    "lon": 13.8987737,
+    "display_name": "Via Epomeo, Noja, Fontana, Serrara Fontana, Napoli, Campania, 80074, Italia"
+  },
+  "Nocera Inferiore Sc. Solimena": {
+    "lat": 40.7473393,
+    "lon": 14.6410145,
+    "display_name": "Via Francesco Solimena, Quartiere storico, Sant'Anna, Cicalesi, Nocera Inferiore, Salerno, Campania, 84014, Italia"
+  },
+  "Ottati Alburni": {
+    "lat": 40.3060,
+    "lon": 15.2770,
+    "tried": [
+      "Ottati Alburni",
+      "Ottati Alburni, Italy"
+    ]
+  },
+  "Polla Area Tritovagliatore": {
+    "lat": 40.4120,
+    "lon": 15.3410,
+    "tried": [
+      "Polla Area Tritovagliatore",
+      "Polla Area Tritovagliatore, Italy"
+    ]
+  },
+  "Pomigliano d'Arco Area Asi": {
+    "lat": 40.4120,
+    "lon": 15.3410,
+    "tried": [
+      "Pomigliano d'Arco Area Asi",
+      "Pomigliano d Arco Area Asi",
+      "Pomigliano d'Arco Area Asi, Napoli, Italy",
+      "Pomigliano d Arco Area Asi, Napoli, Italy",
+      "Pomigliano d'Arco Area Asi, Italy"
+    ]
+  },
+  "Portici Parco Reggia": {
+    "lat": 40.813588,
+    "lon": 14.3476526,
+    "display_name": "Parco Superiore della Reggia di Portici (Parco Gussone), Portici, Napoli, Campania, Italia"
+  },
+  "Pozzuoli Zona Villa Avellino": {
+    "lat": 40.8340,
+    "lon": 14.1190,
+    "tried": [
+      "Pozzuoli Zona Villa Avellino",
+      "Pozzuoli Zona Villa Avellino, Napoli, Italy",
+      "Pozzuoli Zona Villa Avellino, Italy"
+    ]
+  },
+  "S. Vitaliano Scuola Marconi": {
+    "lat": 40.8960,
+    "lon": 14.4600,
+    "tried": [
+      "S. Vitaliano Scuola Marconi",
+      "S Vitaliano Scuola Marconi",
+      "S. Vitaliano Scuola Marconi, Italy"
+    ]
+  },
+  "Salerno SA22 Osp. Via Vernieri": {
+    "lat": 40.6820,
+    "lon": 14.7660,
+    "tried": [
+      "Salerno SA22 Osp. Via Vernieri",
+      "Salerno SA22 Osp Via Vernieri",
+      "Salerno SA22 Osp. Via Vernieri, Salerno, Italy",
+      "Salerno SA22 Osp Via Vernieri, Salerno, Italy",
+      "Salerno SA22 Osp. Via Vernieri, Italy"
+    ]
+  },
+  "Salerno SA23 Scuola Conti °": {
+    "lat": 40.6750,
+    "lon": 14.7680,
+    "tried": [
+      "Salerno SA23 Scuola Conti °",
+      "Salerno SA23 Scuola Conti",
+      "Salerno SA23 Scuola Conti °, Salerno, Italy",
+      "Salerno SA23 Scuola Conti, Salerno, Italy",
+      "Salerno SA23 Scuola Conti °, Italy"
+    ]
+  },
+  "San Felice a Cancello C. Scolast.": {
+    "lat": 41.0150,
+    "lon": 14.2870,
+    "tried": [
+      "San Felice a Cancello C. Scolast.",
+      "San Felice a Cancello C Scolast",
+      "San Felice a Cancello C. Scolast., Italy"
+    ]
+  },
+  "Solofra Zona Industriale": {
+    "lat": 41.0580,
+    "lon": 14.8080,
+    "tried": [
+      "Solofra Zona Industriale",
+      "Solofra Zona Industriale, Italy"
+    ]
+  },
+  "Torre Annunziata Sc. Pascoli": {
+    "lat": 40.7469754,
+    "lon": 14.4608234,
+    "display_name": "Via Giovanni Pascoli, Rione Deriver, Rovigliano, Torre Annunziata, Napoli, Campania, 80058, Italia"
+  },
+  "Volla Via Filichito *°": {
+    "lat": 40.8824226,
+    "lon": 14.3478545,
+    "display_name": "Via Filichito, Volla, Napoli, Campania, 80013, Italia"
+  },
+  "ACERRA ZONA INDUSTRIALE": {
+    "lat": 40.9847962,
+    "lon": 14.3679606,
+    "display_name": "Zona Industriale ASI di Acerra, Acerra, Napoli, Campania, Italia"
+  },
+  "AV41 SCUOLA V CIRCOLO": {
+    "lat": 43.8951992,
+    "lon": 11.3222381,
+    "display_name": "Circolo ARCI Bivigliano, Via della Vecchia Scuola, Bivigliano, Vaglia, Firenze, Toscana, 50036, Italia"
+  },
+  "AVELLINO - SCUOLA ALIGHIERI": {
+    "lat": 40.9190395,
+    "lon": 14.784947,
+    "display_name": "Scuola Secondaria \"Dante Alighieri\", Via Benedetto Croce, Partenio, Avellino, Campania, 83100, Italia"
+  },
+  "Acerra Scuola Capasso": {
+    "lat": 40.9071,
+    "lon": 14.3429,
+    "tried": [
+      "Acerra Scuola Capasso",
+      "Acerra Scuola Capasso, Napoli, Italy",
+      "Acerra Scuola Capasso, Italy"
+    ]
+  },
+  "Acerra scuola Caporale": {
+    "lat": 40.9169,
+    "lon": 14.3425,
+    "tried": [
+      "Acerra scuola Caporale",
+      "Acerra scuola Caporale, Napoli, Italy",
+      "Acerra scuola Caporale, Italy"
+    ]
+  },
+  "Ariano Irpino Villa Comunale": {
+    "lat": 41.1549432,
+    "lon": 15.0951624,
+    "display_name": "Villa Comunale, Vitale Normanno, Ariano Irpino, Avellino, Campania, Italia"
+  },
+  "Aversa scuola Cirillo": {
+    "lat": 40.9758352,
+    "lon": 14.2117669,
+    "display_name": "Liceo Classico Domenico Cirillo, Via Vittorio Colonna, Bagno d'Aversa, Aversa, Caserta, Campania, 81031, Italia"
+  },
+  "BATTIPAGLIA - PARCO FIUME": {
+    "lat": 44.3859682,
+    "lon": 7.5509829,
+    "display_name": "Parco Fluviale Gesso e Stura - Casa del Fiume, Basse Sant'Anna - Borgo Nuovo, Borgo San Giuseppe, Cuneo, Piemonte, Italia"
+  },
+  "BENEVENTO CAMPO SPORTIVO": {
+    "lat": 41.2315276,
+    "lon": 14.5332703,
+    "display_name": "Campo sportivo, Strada Provinciale 15 di Telese Terme, Telese Terme, Benevento, Campania, 82037, Italia"
+  },
+  "BENEVENTO ZONA INDUSTRIALE": {
+    "lat": 41.2293368,
+    "lon": 14.4782074,
+    "display_name": "Zona Industriale Cese Nove, San Salvatore Telesino, Benevento, Campania, 82031, Italia"
+  },
+  "BN32 Via Mustilli": {
+    "lat": 41.7572524,
+    "lon": 12.3201661,
+    "display_name": "Via Domenico Mustilli, Casal Palocco, Municipio Roma X, Stagni di Ostia, Roma, Roma Capitale, Lazio, 00119, Italia"
+  },
+  "Battipaglia STIR": {
+    "lat": 40.6167,
+    "lon": 14.9833,
+    "tried": [
+      "Battipaglia STIR",
+      "Battipaglia STIR, Italy"
+    ]
+  },
+  "CAVA DEI TIRRENI - STADIO": {
+    "lat": 44.4937761,
+    "lon": 11.3101851,
+    "display_name": "Stadio, Via Andrea Costa, Saragozza, Porto-Saragozza, Bologna, Emilia-Romagna, 40134, Italia"
+  },
+  "CE51 ISTITUTO MANZONI": {
+    "lat": 41.0818,
+    "lon": 14.3349,
+    "tried": [
+      "CE51 ISTITUTO MANZONI",
+      "CE51 ISTITUTO MANZONI, Caserta, Italy",
+      "CE51 ISTITUTO MANZONI, Italy"
+    ]
+  },
+  "CE52 SCUOLA DE AMICIS": {
+    "lat": 45.4166851,
+    "lon": 11.8748262,
+    "display_name": "Scuola De Amicis, Via Citolo da Perugia, Arcella, Padova, Veneto, 35138, Italia"
+  },
+  "CE54 SCUOLA SETTEMBRINI": {
+    "lat": 40.7402509,
+    "lon": 14.6724943,
+    "display_name": "Scuola elementare Luigi Settembrini, 9, Via San Clemente, San Clemente, Taverne, Nocera Superiore, Salerno, Campania, 84015, Italia"
+  },
+  "Caivano STIR": {
+    "lat": 40.9965849,
+    "lon": 14.2944939,
+    "display_name": "STIR, ex Strada Statale 87 NC Sannitica Nuova, Caivano, Napoli, Campania, 09618, Italia"
+  },
+  "Casalduni STIR": {
+    "lat": 41.2595,
+    "lon": 14.6949,
+    "tried": [
+      "Casalduni STIR",
+      "Casalduni STIR, Italy"
+    ]
+  },
+  "Caserta CE54 Sc. Settembrini": {
+    "lat": 41.0255387,
+    "lon": 13.9461823,
+    "display_name": "Via Luigi Settembrini, Scatozza, Castel Volturno, Caserta, Campania, 81130, Italia"
+  },
+  "Casoria Scuola Palizzi (CAM)": {
+    "lat": 40.9040,
+    "lon": 14.2890,
+    "tried": [
+      "Casoria Scuola Palizzi (CAM)",
+      "Casoria Scuola Palizzi CAM",
+      "Casoria Scuola Palizzi",
+      "Casoria Scuola Palizzi (CAM), Napoli, Italy",
+      "Casoria Scuola Palizzi CAM, Napoli, Italy",
+      "Casoria Scuola Palizzi, Napoli, Italy",
+      "Casoria Scuola Palizzi (CAM), Italy"
+    ]
+  },
+  "Discarica Maruzzella": {
+    "lat": 41.05389,
+    "lon": 14.23389,
+    "tried": [
+      "Discarica Maruzzella",
+      "Discarica Maruzzella, Italy"
+    ]
+  },
+  "Giugliano STIR": {
+    "lat": 40.9385072,
+    "lon": 14.1080969,
+    "display_name": "STIR di Giugliano, Ponte Riccio - Giugliano Stazione, Giugliano in Campania, Napoli, Campania, Italia"
+  },
+  "Laboratorio Mobile LM01": {
+    "lat": 40.916943,
+    "lon": 14.780833,
+    "tried": [
+      "Laboratorio Mobile LM01",
+      "Laboratorio Mobile LM01, Italy"
+    ]
+  },
+  "Laboratorio Mobile LM03": {
+    "lat": 40.805622 ,
+    "lon": 14.173979,
+    "tried": [
+      "Laboratorio Mobile LM03",
+      "Laboratorio Mobile LM03, Italy"
+    ]
+  },
+  "Laboratorio Mobile MMA": {
+    "lat": null,
+    "lon": null,
+    "tried": [
+      "Laboratorio Mobile MMA",
+      "Laboratorio Mobile MMA, Italy"
+    ]
+  },
+  "Laboratorio Mobile MMB": {
+    "lat": 40.805622,
+    "lon": 14.173979,
+    "tried": [
+      "Laboratorio Mobile MMB",
+      "Laboratorio Mobile MMB, Italy"
+    ]
+  },
+  "NA01 OSSERVATORIO ASTRONOMICO": {
+    "lat": 46.0863714,
+    "lon": 13.3165669,
+    "display_name": "Osservatorio astronomico, Via Santo Stefano, Remanzacco / Remanzâs, Udine / Udin / Videm, Friuli-Venezia Giulia, 33047, Italia"
+  },
+  "NA02 OSPEDALE SANTOBONO": {
+    "lat": 40.8615516,
+    "lon": 14.2278503,
+    "display_name": "Ospedale Santono \"Presidio Cavallino\" - A.O.R.N. Santobono-Pausilipon, Via Bernardo Cavallino, Arenella, Municipalità 5, Santa Croce, Napoli, Campania, 80131, Italia"
+  },
+  "NA06 MUSEO NAZIONALE": {
+    "lat": 40.8536064,
+    "lon": 14.25115,
+    "display_name": "Museo archeologico nazionale di Napoli, 19, Piazza Museo Nazionale, Stella, Municipalità 3, Napoli, Campania, 80135, Italia"
+  },
+  "NA07 ENTE FERROVIE": {
+    "lat": 45.6541955,
+    "lon": 13.7741392,
+    "display_name": "Palazzo delle Ferrovie dello Stato, Piazza Vittorio Veneto, Borgo Teresiano, Città Nuova-Barriera Nuova-San Vito-Città Vecchia, Trieste, Friuli-Venezia Giulia, 34132, Italia"
+  },
+  "NA08 OSPEDALE NUOVO PELLEGRINI": {
+    "lat": 40.8535,
+    "lon": 14.2350,
+    "tried": [
+      "NA08 OSPEDALE NUOVO PELLEGRINI",
+      "NA08 OSPEDALE NUOVO PELLEGRINI, Napoli, Italy",
+      "NA08 OSPEDALE NUOVO PELLEGRINI, Italy"
+    ]
+  },
+  "NA09 I.T.I.S. ARGINE": {
+    "lat": 44.7377462,
+    "lon": 11.6477031,
+    "display_name": "Via Argine Cognola, Zona Industriale San Bartolomeo in Bosco, San Bartolomeo in Bosco, Ferrara, Emilia-Romagna, 44124, Italia"
+  },
+  "Napoli parco Virgiliano": {
+    "lat": 40.7984999,
+    "lon": 14.1790765,
+    "display_name": "Parco Virgiliano, Municipalità 1, Coroglio, Napoli, Campania, Italia"
+  },
+  "Napoli via Epomeo": {
+    "lat": 40.7205434,
+    "lon": 13.8987737,
+    "display_name": "Via Epomeo, Noja, Fontana, Serrara Fontana, Napoli, Campania, 80074, Italia"
+  },
+  "Nocera Inferiore scuola Solimene": {
+    "lat": 40.7445,
+    "lon": 14.7340,
+    "tried": [
+      "Nocera Inferiore scuola Solimene",
+      "Nocera Inferiore scuola Solimene, Italy"
+    ]
+  },
+  "OTTATI - ALBURNI": {
+    "lat": 40.560311,
+    "lon": 15.303957,
+    "display_name": "Sicignano degli Alburni, Salerno, Campania, 84029, Italia"
+  },
+  "Pianodardine STIR": {
+    "lat": 40.9436148,
+    "lon": 14.8298173,
+    "display_name": "Impianto STIR - CDR, Autostrada dei Due Mari, Pianodardine, Avellino, Campania, 83100, Italia"
+  },
+  "Polla Area tritovagliatore": {
+    "lat": 40.4120,
+    "lon": 15.3410,
+    "tried": [
+      "Polla Area tritovagliatore",
+      "Polla Area tritovagliatore, Italy"
+    ]
+  },
+  "Pomigliano d'Arco Area ASI": {
+    "lat": 40.9075,
+    "lon": 14.3930,
+    "tried": [
+      "Pomigliano d'Arco Area ASI",
+      "Pomigliano d Arco Area ASI",
+      "Pomigliano d'Arco Area ASI, Napoli, Italy",
+      "Pomigliano d Arco Area ASI, Napoli, Italy",
+      "Pomigliano d'Arco Area ASI, Italy"
+    ]
+  },
+  "Portici parco Reggia": {
+    "lat": 40.813588,
+    "lon": 14.3476526,
+    "display_name": "Parco Superiore della Reggia di Portici (Parco Gussone), Portici, Napoli, Campania, Italia"
+  },
+  "Pozzuoli ex Villa Avellino": {
+    "lat": 40.8340,
+    "lon": 14.1190,
+    "tried": [
+      "Pozzuoli ex Villa Avellino",
+      "Pozzuoli ex Villa Avellino, Napoli, Italy",
+      "Pozzuoli ex Villa Avellino, Italy"
+    ]
+  },
+  "Pratella Loc. Mastrati °*": {
+    "lat": 41.4610,
+    "lon": 14.6410,
+    "tried": [
+      "Pratella Loc. Mastrati °*",
+      "Pratella Loc Mastrati",
+      "Pratella Loc. Mastrati °*, Italy"
+    ]
+  },
+  "Presenzano Vic. Monastero °*": {
+    "lat": 41.2390,
+    "lon": 14.2320,
+    "tried": [
+      "Presenzano Vic. Monastero °*",
+      "Presenzano Vic Monastero",
+      "Presenzano Vic. Monastero °*, Italy"
+    ]
+  },
+  "S. Maria Capua V. STIR": {
+    "lat": 41.048084,
+    "lon": 14.2385823,
+    "display_name": "Strada STIR, San Tammaro, Caserta, Campania, 81055, Italia"
+  },
+  "SA22 Ospedale via Vernieri": {
+    "lat": 40.6820,
+    "lon": 14.7660,
+    "tried": [
+      "SA22 Ospedale via Vernieri",
+      "SA22 Ospedale via Vernieri, Salerno, Italy",
+      "SA22 Ospedale via Vernieri, Italy"
+    ]
+  },
+  "SA23 SCUOLA OSVALDO CONTI": {
+    "lat": 41.0580,
+    "lon": 14.8080,
+    "tried": [
+      "SA23 SCUOLA OSVALDO CONTI",
+      "SA23 SCUOLA OSVALDO CONTI, Salerno, Italy",
+      "SA23 SCUOLA OSVALDO CONTI, Italy"
+    ]
+  },
+  "SOLOFRA ZONA INDUSTRIALE": {
+    "lat": 41.0580,
+    "lon": 14.8080,
+    "tried": [
+      "SOLOFRA ZONA INDUSTRIALE",
+      "SOLOFRA ZONA INDUSTRIALE, Italy"
+    ]
+  },
+  "San Felice a Cancello Complesso scolastico": {
+    "lat": 41.0150,
+    "lon": 14.2870,
+    "tried": [
+      "San Felice a Cancello Complesso scolastico",
+      "San Felice a Cancello Complesso scolastico, Italy"
+    ]
+  },
+  "San Vitaliano Scuola Elementare Marconi": {
+    "lat": 40.8960,
+    "lon": 14.4600,
+    "tried": [
+      "San Vitaliano Scuola Elementare Marconi",
+      "San Vitaliano Scuola Elementare Marconi, Napoli, Italy",
+      "San Vitaliano Scuola Elementare Marconi, Italy"
+    ]
+  },
+  "Torre Annunziata Scuola Media Pascoli": {
+    "lat": 40.8310,
+    "lon": 14.4260,
+    "tried": [
+      "Torre Annunziata Scuola Media Pascoli",
+      "Torre Annunziata Scuola Media Pascoli, Napoli, Italy",
+      "Torre Annunziata Scuola Media Pascoli, Italy"
+    ]
+  },
+  "Tufino STIR": {
+    "lat": 40.944411,
+    "lon": 14.5808578,
+    "display_name": "STIR  di Tufino, Strada Provinciale Visciano-Schiava, Tufino, Napoli, Campania, 83021, Italia"
+  },
+  "Volla via Filichito": {
+    "lat": 40.8824226,
+    "lon": 14.3478545,
+    "display_name": "Via Filichito, Volla, Napoli, Campania, 80013, Italia"
+  }
+}
