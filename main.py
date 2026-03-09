@@ -46,7 +46,7 @@ if not file_exists(GREZZI_CLEAN_FILE):
     df_grezzi = denoise_iqr(df_grezzi)
 
     # STEP 4: Filtraggio per inquinanti di interesse
-    # Mantiene solo: PM10, PM2.5, NO2, O3 (vedi config.py)
+    # Mantiene solo: PM10, PM12.5, NO2, O3 (vedi config.py)
     print("🎯 Filtraggio inquinanti...")
     df_grezzi = filtro_inquinanti(df_grezzi)
 

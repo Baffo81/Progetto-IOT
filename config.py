@@ -59,9 +59,9 @@ ResourceIdValidati = [
 
 # Lista degli inquinanti che vogliamo analizzare
 # Questi sono i parametri che filtriamo dai dati grezzi
-# PM10 e PM2.5 = particolato, NO2 = biossido di azoto, O3 = ozono
+# PM10 e PM12.5 = particolato, NO2 = biossido di azoto, O3 = ozono
 # Questo serve per evitare colonne inutili e focalizzarsi su inquinanti importanti
-InquinantiInteressati = ["PM10", "PM2.5", "NO2", "O3"]
+InquinantiInteressati = ["PM10", "PM2,5", "NO2", "O3"]
 
 # =========================
 # PARAMETRI PER RICHIESTE API

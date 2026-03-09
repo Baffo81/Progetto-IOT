@@ -643,7 +643,7 @@ async function showStationDetails(stationName) {
             if (item.pollutant === 'PM10') historicalDataMap[date].PM10.push(item.value);
             if (item.pollutant === 'NO2') historicalDataMap[date].NO2.push(item.value);
             if (item.pollutant === 'O3') historicalDataMap[date].O3.push(item.value);
-            if (item.pollutant === 'PM12.5') historicalDataMap[date].PM12_5.push(item.value);
+            if (item.pollutant === 'PM2,5') historicalDataMap[date].PM12_5.push(item.value);
         });
 
         const historicalData = Object.values(historicalDataMap).map(dayData => {
@@ -787,6 +787,13 @@ function renderPollutantChart(data) {
                     borderWidth: 1
                 },
                 {
+                    label: 'PM2,5',
+                    data: pm10Values,
+                    backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                },
+                {
                     label: 'NO2',
                     data: no2Values,
                     backgroundColor: 'rgba(255, 159, 64, 0.6)',
@@ -907,7 +914,7 @@ const AQI_THRESHOLDS = {
         "VERY POOR": [160, 280],
         "EXTREMELY POOR": [280, Infinity],
     },
-    "PM12.5": {
+    "PM2,5": {
         "GOOD": [0, 10],
         "FAIR": [10, 25],
         "MODERATE": [25, 50],
