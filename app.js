@@ -638,12 +638,13 @@ async function showStationDetails(stationName) {
         stationData.forEach(item => {
             const date = new Date(item.date).toISOString().split('T')[0]; // YYYY-MM-DD
             if (!historicalDataMap[date]) {
-                historicalDataMap[date] = { date: date, PM10: [], NO2: [], O3: [], PM12_5: [] };
+                historicalDataMap[date] = { date: date, PM10: [], NO2: [], O3: [], PM12_5: [], CO: [] };
             }
             if (item.pollutant === 'PM10') historicalDataMap[date].PM10.push(item.value);
             if (item.pollutant === 'NO2') historicalDataMap[date].NO2.push(item.value);
             if (item.pollutant === 'O3') historicalDataMap[date].O3.push(item.value);
             if (item.pollutant === 'PM2,5') historicalDataMap[date].PM12_5.push(item.value);
+            if (item.pollutant === 'CO') historicalDataMap[date].CO.push(item.value);
         });
 
         const historicalData = Object.values(historicalDataMap).map(dayData => {
@@ -651,12 +652,14 @@ async function showStationDetails(stationName) {
             const avgNO2 = dayData.NO2.length ? dayData.NO2.reduce((a, b) => a + b) / dayData.NO2.length : null;
             const avgO3 = dayData.O3.length ? dayData.O3.reduce((a, b) => a + b) / dayData.O3.length : null;
             const avgPM12_5 = dayData.PM12_5.length ? dayData.PM12_5.reduce((a, b) => a + b) / dayData.PM12_5.length : null;
+            const avgCO = dayData.CO.length ? dayData.CO.reduce((a, b) => a + b) / dayData.CO.length : null;
 
             const dailyPollutants = [];
             if (avgPM10 !== null) dailyPollutants.push({ pollutant: 'PM10', value: avgPM10 });
             if (avgNO2 !== null) dailyPollutants.push({ pollutant: 'NO2', value: avgNO2 });
             if (avgO3 !== null) dailyPollutants.push({ pollutant: 'O3', value: avgO3 });
             if (avgPM12_5 !== null) dailyPollutants.push({ pollutant: 'PM12.5', value: avgPM12_5 });
+            if (avgCO !== null) dailyPollutants.push({ pollutant: 'CO', value: avgCO });
 
             const { category: dailyAqiCategory } = getAqiForStation(dailyPollutants);
 
@@ -666,6 +669,7 @@ async function showStationDetails(stationName) {
                 NO2: avgNO2,
                 O3: avgO3,
                 PM12_5: avgPM12_5,
+                CO: avgCO,
                 Index: dailyAqiCategory
             };
         });
@@ -768,6 +772,7 @@ function renderPollutantChart(data) {
     const no2Values = data.map(item => item.NO2);
     const o3Values = data.map(item => item.O3);
     const pm12_5Values = data.map(item => item.PM12_5);
+    const coValues = data.map(item => item.CO);
     const indexValues = data.map(item => getAqiValue(item.Index)); // Converte l'indice testuale in un valore numerico per il grafico
 
     if (pollutantChart) {
@@ -788,7 +793,7 @@ function renderPollutantChart(data) {
                 },
                 {
                     label: 'PM2,5',
-                    data: pm10Values,
+                    data: pm12_5Values,
                     backgroundColor: 'rgba(255, 99, 132, 0.6)',
                     borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 1
@@ -807,6 +812,15 @@ function renderPollutantChart(data) {
                     borderColor: 'rgba(255, 205, 86, 1)',
                     borderWidth: 1
                 },
+
+                {
+                    label: 'CO',
+                    data: coValues,
+                    backgroundColor: 'rgba(75, 1, 192, 0.6)',
+                    borderColor: 'rgba(50, 1, 192, 1)',
+                    borderWidth: 1
+                },
+
                 {
                     label: 'Indice AQI',
                     data: indexValues,
@@ -916,11 +930,19 @@ const AQI_THRESHOLDS = {
     },
     "PM2,5": {
         "GOOD": [0, 10],
-        "FAIR": [10, 25],
-        "MODERATE": [25, 50],
+        "FAIR": [35, 50],
+        "MODERATE": [150, 200],
         "POOR": [50, 75],
         "VERY POOR": [75, 100],
         "EXTREMELY POOR": [100, Infinity],
+    },
+    "CO": {
+        "GOOD": [0, 5],
+        "FAIR": [6, 7],
+        "MODERATE": [8, 10],
+        "POOR": [11, 20],
+        "VERY POOR": [21, 30],
+        "EXTREMELY POOR": [31, Infinity],
     }
 };
 
