@@ -929,12 +929,12 @@ const AQI_THRESHOLDS = {
         "EXTREMELY POOR": [280, Infinity],
     },
     "PM2,5": {
-        "GOOD": [0, 10],
-        "FAIR": [35, 50],
-        "MODERATE": [150, 200],
-        "POOR": [50, 75],
-        "VERY POOR": [75, 100],
-        "EXTREMELY POOR": [100, Infinity],
+        "GOOD": [0, 5],
+        "FAIR": [6, 15],
+        "MODERATE": [16, 50],
+        "POOR": [51, 90],
+        "VERY POOR": [91, 140],
+        "EXTREMELY POOR": [141, Infinity],
     },
     "CO": {
         "GOOD": [0, 5],
