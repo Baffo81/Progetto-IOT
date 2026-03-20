@@ -1072,3 +1072,118 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// ===============================
+// SELEZIONE ELEMENTI DAL DOM
+// ===============================
+const airChatBtn = document.getElementById("airChatBtn");     // Pulsante flottante
+const chatbotPanel = document.getElementById("chatbotPanel"); // Pannello chat
+const chatbotClose = document.getElementById("chatbotClose"); // Bottone chiusura
+
+const input = document.querySelector(".chatbot-footer input");   // Campo input testo
+const sendBtn = document.querySelector(".chatbot-footer button"); // Bottone invio
+const chatBody = document.querySelector(".chatbot-body");        // Contenitore messaggi
+
+
+// ===============================
+// APERTURA / CHIUSURA CHAT
+// ===============================
+
+// Toggle apertura chat
+airChatBtn.addEventListener("click", () => {
+    chatbotPanel.classList.toggle("open");  // Mostra/nasconde pannello
+    airChatBtn.classList.toggle("active");  // Effetto click sul bottone
+});
+
+// Chiusura chat
+chatbotClose.addEventListener("click", () => {
+    chatbotPanel.classList.remove("open");
+    airChatBtn.classList.remove("active");
+});
+
+
+// ===============================
+// AGGIUNTA MESSAGGI ALLA CHAT
+// ===============================
+function addMessage(text, type) {
+    const message = document.createElement("div");
+
+    // Se è utente → user-message, altrimenti bot-message
+    message.classList.add(type === "user" ? "user-message" : "bot-message");
+
+    message.textContent = text; // Inserisce il testo
+
+    chatBody.appendChild(message); // Aggiunge alla chat
+
+    // Scroll automatico verso l’ultimo messaggio
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+
+// ===============================
+// INVIO MESSAGGIO UTENTE
+// ===============================
+function sendMessage() {
+    const text = input.value.trim(); // Prende testo e rimuove spazi
+
+    // Se vuoto → non fare nulla
+    if (text === "") return;
+
+    addMessage(text, "user"); // Mostra messaggio utente
+    input.value = "";         // Svuota input
+
+    botReply(text);           // Genera risposta bot
+}
+
+
+// ===============================
+// EVENTI INPUT
+// ===============================
+
+// Click su bottone invia
+sendBtn.addEventListener("click", sendMessage);
+
+// Invio con tasto ENTER
+input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        sendMessage();
+    }
+});
+
+
+// ===============================
+// RISPOSTA BOT (con effetto typing)
+// ===============================
+function botReply(userText) {
+
+    // Crea messaggio temporaneo "sta scrivendo..."
+    const typing = document.createElement("div");
+    typing.classList.add("bot-message");
+    typing.textContent = "Sta scrivendo...";
+    chatBody.appendChild(typing);
+
+    chatBody.scrollTop = chatBody.scrollHeight;
+
+    // Simula tempo di risposta
+    setTimeout(() => {
+        typing.remove(); // Rimuove "sta scrivendo..."
+
+        let response = "Non ho capito 😅"; // Risposta default
+        const text = userText.toLowerCase();
+
+        // Logica semplice di risposta
+        if (text.includes("aria") || text.includes("qualità")) {
+            response = "La qualità dell’aria è buona 👍 PM2.5: 12 µg/m³";
+        }
+        else if (text.includes("temperatura")) {
+            response = "La temperatura è di 22°C 🌡️";
+        }
+        else if (text.includes("ciao")) {
+            response = "Ciao! 👋 Come posso aiutarti?";
+        }
+
+        // Mostra risposta finale
+        addMessage(response, "bot");
+
+    }, 1000); // Ritardo per simulare "pensiero"
+}
