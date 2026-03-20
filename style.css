@@ -707,3 +707,269 @@ select:focus, input[type="date"]:focus{
   border: 1px solid rgba(255,255,255,0.25);
 }
 
+
+/* -------------------------
+   Pulsante IoT Air Quality
+   Versione compatta blu
+-------------------------- */
+.air-chat-btn {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(29, 78, 216, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    font-family: Arial, sans-serif;
+    animation: airPulse 2.8s infinite;
+}
+
+/* Hover */
+.air-chat-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 16px 32px rgba(29, 78, 216, 0.45);
+}
+
+/* Click */
+.air-chat-btn.active {
+    transform: scale(0.95);
+}
+
+/* Icona stile sensore / aria */
+.air-chat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.air-chat-icon .dot {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.95;
+}
+
+.air-chat-icon .dot-1 {
+    width: 6px;
+    height: 6px;
+    left: 7px;
+    top: 16px;
+}
+
+.air-chat-icon .dot-2 {
+    width: 8px;
+    height: 8px;
+    top: 5px;
+    left: 16px;
+}
+
+.air-chat-icon .dot-3 {
+    width: 10px;
+    height: 10px;
+    right: 5px;
+    bottom: 7px;
+}
+
+/* Badge qualità aria */
+.air-badge {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.air-badge.good {
+    background: #22c55e;
+}
+
+.air-badge.medium {
+    background: #facc15;
+}
+
+.air-badge.bad {
+    background: #ef4444;
+}
+
+/* Testi nascosti nel nuovo layout compatto */
+.air-chat-label,
+.air-status {
+    display: none;
+}
+
+/* Effetto pulse */
+@keyframes airPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.35);
+    }
+    70% {
+        box-shadow: 0 0 0 14px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+/* -------------------------
+   Pannello Chatbot
+-------------------------- */
+.chatbot-panel {
+    position: fixed;
+    right: 24px;
+    bottom: 104px;
+    width: 360px;
+    max-width: calc(100vw - 32px);
+    height: 500px;
+    max-height: 70vh;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9998;
+    font-family: Arial, sans-serif;
+}
+
+.chatbot-panel.open {
+    display: flex;
+}
+
+.chatbot-header {
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.chatbot-header p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.chatbot-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Corpo */
+.chatbot-body {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #f4f8ff;
+}
+
+.bot-message,
+.user-message {
+    max-width: 80%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.bot-message {
+    background: #e0edff;
+    color: #163b72;
+    border-top-left-radius: 4px;
+}
+
+.user-message {
+    background: #2563eb;
+    color: white;
+    margin-left: auto;
+    border-top-right-radius: 4px;
+}
+
+/* Footer */
+.chatbot-footer {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #e5e7eb;
+    background: #fff;
+}
+
+.chatbot-footer input {
+    flex: 1;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.chatbot-footer input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.chatbot-footer button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 0 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.chatbot-footer button:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .air-chat-btn {
+        width: 60px;
+        height: 60px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .air-chat-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .chatbot-panel {
+        right: 12px;
+        left: 12px;
+        bottom: 90px;
+        width: auto;
+        height: 65vh;
+    }
+}
+

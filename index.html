@@ -227,6 +227,46 @@
         </div>
     </div>
 
+<!-- Pulsante -->
+<div class="air-chat-btn" id="airChatBtn">
+    <div class="air-chat-icon">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+    </div>
+    <div class="air-badge good"></div>
+</div>
+
+<!-- Chatbot -->
+<div class="chatbot-panel" id="chatbotPanel">
+
+    <!-- Header -->
+    <div class="chatbot-header">
+        <div>
+            <h3>Air Quality Assistant</h3>
+            <p>Monitora e controlla la qualità dell’aria</p>
+        </div>
+        <button class="chatbot-close" id="chatbotClose">&times;</button>
+    </div>
+
+    <!-- Corpo chat -->
+    <div class="chatbot-body" id="chatBody">
+        <!-- Messaggi iniziali (opzionali) -->
+        <div class="bot-message">Ciao! 👋 Posso aiutarti con la qualità dell’aria.</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="chatbot-footer">
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Scrivi un messaggio..."
+            autocomplete="off"
+        />
+        <button id="sendBtn">Invia</button>
+    </div>
+
+</div>
     <!-- LEAFLET JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
