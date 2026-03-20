@@ -1152,38 +1152,37 @@ input.addEventListener("keypress", (e) => {
 
 
 // ===============================
-// RISPOSTA BOT (con effetto typing)
+// RISPOSTA BOT
 // ===============================
-function botReply(userText) {
 
-    // Crea messaggio temporaneo "sta scrivendo..."
+async function botReply(userText) {
     const typing = document.createElement("div");
     typing.classList.add("bot-message");
     typing.textContent = "Sta scrivendo...";
     chatBody.appendChild(typing);
-
     chatBody.scrollTop = chatBody.scrollHeight;
 
-    // Simula tempo di risposta
-    setTimeout(() => {
-        typing.remove(); // Rimuove "sta scrivendo..."
+    try {
+        const response = await fetch("http://localhost:3000/api/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message: userText })
+        });
 
-        let response = "Non ho capito 😅"; // Risposta default
-        const text = userText.toLowerCase();
+        const data = await response.json();
 
-        // Logica semplice di risposta
-        if (text.includes("aria") || text.includes("qualità")) {
-            response = "La qualità dell’aria è buona 👍 PM2.5: 12 µg/m³";
+        typing.remove();
+
+        if (!response.ok) {
+            throw new Error(data.error || "Errore server");
         }
-        else if (text.includes("temperatura")) {
-            response = "La temperatura è di 22°C 🌡️";
-        }
-        else if (text.includes("ciao")) {
-            response = "Ciao! 👋 Come posso aiutarti?";
-        }
 
-        // Mostra risposta finale
-        addMessage(response, "bot");
-
-    }, 1000); // Ritardo per simulare "pensiero"
+        addMessage(data.reply || "Non ho capito", "bot");
+    } catch (error) {
+        console.error("Errore botReply:", error);
+        typing.remove();
+        addMessage("Si è verificato un errore 😅", "bot");
+    }
 }
