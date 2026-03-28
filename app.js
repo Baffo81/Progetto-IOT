@@ -1163,12 +1163,12 @@ async function botReply(userText) {
     chatBody.scrollTop = chatBody.scrollHeight;
 
     try {
-        const response = await fetch("http://localhost:3000/api/chat", {
+        const response = await fetch("http://localhost:8000/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ message: userText })
+            body: JSON.stringify({ user_msg: userText })
         });
 
         const data = await response.json();
@@ -1179,10 +1179,10 @@ async function botReply(userText) {
             throw new Error(data.error || "Errore server");
         }
 
-        addMessage(data.reply || "Non ho capito", "bot");
+        addMessage(data.response, "bot")
     } catch (error) {
         console.error("Errore botReply:", error);
         typing.remove();
-        addMessage("Si è verificato un errore 😅", "bot");
+        addMessage("Si è verificato un errore", "bot");
     }
 }
