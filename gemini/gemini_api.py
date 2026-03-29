@@ -42,14 +42,15 @@ def get_value_pollutant(location: str, date: str, time: int, pollutant: str) -> 
     ].iloc()[0]["value"]
 
 
-def get_station_name():
+def get_station_name() -> list[str]:
     """
     Returns the list of available monitoring station names.
 
     Returns:
-        list: List of station names.
+        list[str]: List of station names.
     """
-    return pd.read_json("../data/station_coords.json").columns.values
+    df = pd.read_json("../data/station_coords.json")
+    return df.columns.tolist()
 
 
 def get_pollutant_name():
@@ -70,7 +71,7 @@ function_tools = [
     get_value_pollutant,
     get_station_name,
     get_pollutant_name,
-get_aqi_category
+    #get_aqi_category
 ]
 
 def send_request(request_user):
@@ -91,17 +92,15 @@ def send_request(request_user):
             tools=function_tools,
             system_instruction="""
             You are an air quality assistant.
-    
+            
             When the user asks for air quality:
-            1. Call the function to retrieve the pollutant value.
-            2. Then call the function to classify the AQI category.
-            3. Provide a clear final answer including:
-               - pollutant value
-               - air quality category
-    
-            Always use the available tools when possible.
+                1.	First, call the function get_station_name to retrieve the name of the station closest to the requested location.
+                2.	Then call the function to retrieve the pollutant value using that station.
+                3.	Then call the function to classify the AQI category.
+                4.	Provide a clear final answer including: station name, pollutant value, air quality category
+            
+            Always use the available tools when possible and follow this order strictly.
             """
         )
     )
-
     return response.text

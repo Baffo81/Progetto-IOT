@@ -23,7 +23,6 @@ async def root_app():
 @app.post("/chat")
 async def chatbot(chat_input: ChatBotInput):
     try:
-        print(chat_input.user_msg)
         resp = send_request(chat_input.user_msg)
         return {"response": resp}
 
