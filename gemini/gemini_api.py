@@ -1,8 +1,6 @@
 import os
 
 import pandas as pd
-from fastapi import HTTPException
-
 from google import genai
 from google.genai import types
 
@@ -63,6 +61,26 @@ def get_pollutant_name():
     return ["CO", "NO2", "PM10", "PM2,5", "O3"]
 
 
+def get_pollutant_description(pollutant: str) -> str:
+    """
+    Restituisce una breve descrizione dell'inquinante richiesto.
+
+    Args:
+        pollutant (str): Nome dell'inquinante.
+
+    Returns:
+        str: Descrizione dell'inquinante.
+    """
+    descriptions = {
+        "CO": "Il monossido di carbonio (CO) è un gas incolore e inodore prodotto dalla combustione incompleta di combustibili fossili. Può essere pericoloso per la salute, specialmente in ambienti chiusi.",
+        "NO2": "Il biossido di azoto (NO2) è un gas irritante prodotto principalmente dai veicoli e dagli impianti industriali. Può causare problemi respiratori e contribuisce alla formazione di smog.",
+        "PM10": "Il particolato PM10 è costituito da particelle sospese con diametro inferiore a 10 micrometri. Può penetrare nelle vie respiratorie e causare problemi di salute.",
+        "PM2,5": "Il particolato PM2,5 è formato da particelle molto fini (diametro inferiore a 2,5 micrometri) che possono raggiungere i polmoni profondi e il sistema circolatorio.",
+        "O3": "L'ozono (O3) a livello del suolo è un inquinante secondario che si forma per reazione chimica tra altri inquinanti in presenza di luce solare. Può causare irritazione agli occhi e alle vie respiratorie."
+    }
+    return descriptions.get(pollutant, "Descrizione non disponibile per questo inquinante.")
+
+
 def get_aqi_category(pollutant: str, value: float) -> str:
     pass
 
@@ -71,6 +89,7 @@ function_tools = [
     get_value_pollutant,
     get_station_name,
     get_pollutant_name,
+    get_pollutant_description,
     #get_aqi_category
 ]
 
@@ -94,10 +113,14 @@ def send_request(request_user):
             You are an air quality assistant.
             
             When the user asks for air quality:
-                1.	First, call the function get_station_name to retrieve the name of the station closest to the requested location.
-                2.	Then call the function to retrieve the pollutant value using that station.
-                3.	Then call the function to classify the AQI category.
-                4.	Provide a clear final answer including: station name, pollutant value, air quality category
+                1.   First, call the function get_station_name to retrieve the name of the station closest to the requested location.
+                2.   Then call the function to retrieve the pollutant value using that station.
+                3.   Then call the function to classify the AQI category.
+                4.   Provide a clear final answer including: station name, pollutant value, air quality category
+
+            When the user asks for a description of a pollutant:
+                1.   Call the function get_pollutant_description with the requested pollutant.
+                2.   Provide the returned description in your answer.
             
             Always use the available tools when possible and follow this order strictly.
             """

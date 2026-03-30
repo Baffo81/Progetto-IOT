@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from gemini_api import send_request
+from .gemini_api import send_request
 
 app = FastAPI()
 
