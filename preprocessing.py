@@ -1,7 +1,8 @@
 # =========================
 # PREPROCESSING DATI
 # =========================
-# Qui avvengono tutte le operazioni di pulizia dei dati (grezzi).
+# Questo modulo contiene funzioni per la pulizia, normalizzazione e preparazione dei dati
+# delle stazioni di monitoraggio dell'aria. Ogni funzione è commentata per spiegare il suo scopo.
 
 import pandas as pd
 from config import InquinantiInteressati

@@ -1,14 +1,19 @@
+
 # =====================================================
 # FILE: add_coords.py
 # SCOPO: Aggiungere coordinate geografiche (lat/lon)
 #        alle stazioni nel DataFrame
 # =====================================================
 
-import json
-from pathlib import Path
+# Questo modulo fornisce funzioni per caricare le coordinate delle stazioni
+# da un file JSON e aggiungerle come colonne a un DataFrame pandas.
+
+
+import json  # Per la gestione dei file JSON
+from pathlib import Path  # Per la gestione dei percorsi file
 
 # Percorso del file JSON che contiene le coordinate di tutte le stazioni
-# Formato: {"Nome Stazione": {"lat": 40.123, "lon": 14.456}, ...}
+# Formato atteso: {"Nome Stazione": {"lat": 40.123, "lon": 14.456}, ...}
 COORDS_FILE = Path("data/station_coords.json")
 
 
@@ -55,7 +60,7 @@ def add_coords_to_df(df, station_col="Descrizione"):
     # Carica il mapping stazioni-coordinate dal JSON
     coords_mapping = load_coords_mapping()
 
-    # Funzione che cerca le coordinate per una singola stazione
+    # Funzione interna che cerca le coordinate per una singola stazione
     def lookup(cell):
         # Converte il valore della cella in stringa (evita None)
         key = cell if cell is not None else ""

@@ -14,8 +14,25 @@ MODEL_ID = "gemini-2.5-flash"
 # Create client
 client = genai.Client(api_key=API_KEY)
 
+# =========================
+# GEMINI API CLIENT
+# =========================
+# Questo modulo contiene le funzioni per interfacciarsi con l'API Gemini,
+# gestire le richieste, le risposte e la logica di autenticazione.
+# Ogni funzione è commentata per spiegare il suo ruolo.
+
+
 def load_file(date: str):
+    """Carica i dati giornalieri da un file JSON.
+
+    Args:
+        date (str): La data nel formato YYYY-MM-DD.
+
+    Returns:
+        DataFrame: Un DataFrame pandas contenente i dati del file.
+    """
     return pd.read_json(path_daily_data + date + '.json')
+
 
 def get_value_pollutant(location: str, date: str, time: int, pollutant: str) -> float:
     """

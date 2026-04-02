@@ -715,8 +715,8 @@ select:focus, input[type="date"]:focus{
 .air-chat-btn {
     box-sizing: border-box;
     position: fixed;
-    bottom: 24px;
-    right: 24px;
+    top: 900px;
+    right: 1650px;
     width: 68px;
     height: 68px;
     background: linear-gradient(135deg, #1d4ed8, #3b82f6);
@@ -833,8 +833,8 @@ select:focus, input[type="date"]:focus{
 -------------------------- */
 .chatbot-panel {
     position: fixed;
-    right: 24px;
-    bottom: 104px;
+    top: 400px;
+    right: 1200px;
     width: 360px;
     max-width: calc(100vw - 32px);
     height: 500px;

@@ -8,6 +8,12 @@ from pathlib import Path
 import pandas as pd
 
 # =========================
+# CONFIGURAZIONE
+# =========================
+# Questo file contiene tutte le costanti, variabili di ambiente e parametri di configurazione
+# utilizzati dal progetto. Ogni sezione è commentata per spiegare il suo scopo.
+
+# =========================
 # CONFIGURAZIONE API CKAN
 # =========================
 

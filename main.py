@@ -4,6 +4,13 @@
 #        Scarica, pulisce, elabora e salva i dati
 # =====================================================
 
+# =========================
+# MAIN - AVVIO DEL PROGRAMMA
+# =========================
+# Questo file rappresenta il punto di ingresso principale del progetto.
+# Contiene la logica di orchestrazione, caricamento dati e avvio delle funzionalità principali.
+# Ogni funzione e blocco logico è commentato per spiegare il suo ruolo.
+
 # Importazione funzioni personalizzate da altri file
 from Ckan_client import fetch_multiple_resources    # Scarica dati da CKAN
 from add_coords import add_coords_to_df            # Aggiunge coordinate geografiche
