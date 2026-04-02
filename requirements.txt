@@ -4,4 +4,5 @@ uvicorn
 google-generativeai
 requests
 python-dotenv
-
+pydantic
+google-genai
