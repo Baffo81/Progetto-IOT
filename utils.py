@@ -204,12 +204,16 @@ def get_station_details_data(station_name, df_grezzi, df_media):
         for index, row in historical_pivot.iterrows():
             daily_aqi_data = pd.DataFrame([
                 {"pollutant": p, "value": row[p]}
-                for p in ["PM10", "NO2", "O3", "PM12.5"] if p in row and pd.notna(row[p])
+                for p in ["PM10", "NO2", "O3", "PM2.5"] if p in row and pd.notna(row[p])
             ])
             aqi_category, _ = get_aqi_for_station(daily_aqi_data)
 
             row_dict = row.to_dict()
             row_dict["date"] = row_dict["date"].strftime("%Y-%m-%d")
+            # Arrotonda i valori degli inquinanti a 1 decimale
+            for pollutant in ["PM10", "NO2", "O3", "PM2.5"]:
+                if pollutant in row_dict and pd.notna(row_dict[pollutant]):
+                    row_dict[pollutant] = round(row_dict[pollutant], 1)
             row_dict["Index"] = aqi_category
             historical_data_list.append(row_dict)
 
@@ -218,40 +222,5 @@ def get_station_details_data(station_name, df_grezzi, df_media):
         details["historical_data"] = []
 
     return details
-
-# =========================
-# UTILITY E FUNZIONI DI SUPPORTO
-# =========================
-# Questo modulo contiene funzioni di utilità generiche e helper usate in tutto il progetto.
-# Ogni funzione è commentata per spiegare il suo scopo e il suo utilizzo.
-
-def ensure_directory(path):
-    """
-    Controlla se una directory esiste.
-    Se non esiste, la crea.
-    """
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-
-def file_exists(path):
-    """
-    Ritorna True se il file esiste, False altrimenti.
-    """
-    return os.path.isfile(path)
-
-
-def save_dataframe(df, path):
-    """
-    Salva un DataFrame pandas in formato CSV.
-    """
-    df.to_csv(path, index=False)
-
-
-def load_dataframe(path):
-    """
-    Carica un DataFrame pandas da CSV.
-    """
-    return pd.read_csv(path)
 
 

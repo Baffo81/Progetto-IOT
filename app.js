@@ -745,10 +745,10 @@ function renderAccumulatedChart(data) {
                             if (label) {
                                 label += ': ';
                             }
-                            if (context.parsed !== null) {
-                                label += context.parsed + '%';
-                            }
-                            return label;
+                             if (context.parsed !== null) {
+                                 label += context.parsed.toFixed(1) + '%';
+                             }
+                             return label;
                         }
                     }
                 }
@@ -768,11 +768,12 @@ function renderPollutantChart(data) {
     data.sort((a, b) => new Date(a.date) - new Date(b.date));
 
     const dates = data.map(item => new Date(item.date).toLocaleDateString('it-IT', { day: '2-digit', month: 'short' }));
-    const pm10Values = data.map(item => item.PM10);
-    const no2Values = data.map(item => item.NO2);
-    const o3Values = data.map(item => item.O3);
-    const pm12_5Values = data.map(item => item.PM12_5);
-    const coValues = data.map(item => item.CO);
+    // Arrotonda i valori a 1 decimale PRIMA di passarli al grafico
+    const pm10Values = data.map(item => item.PM10 !== undefined ? Number.parseFloat(item.PM10).toFixed(1) : null);
+    const no2Values = data.map(item => item.NO2 !== undefined ? Number.parseFloat(item.NO2).toFixed(1) : null);
+    const o3Values = data.map(item => item.O3 !== undefined ? Number.parseFloat(item.O3).toFixed(1) : null);
+    const pm12_5Values = data.map(item => item.PM12_5 !== undefined ? Number.parseFloat(item.PM12_5).toFixed(1) : null);
+    const coValues = data.map(item => item.CO !== undefined ? Number.parseFloat(item.CO).toFixed(1) : null);
     const indexValues = data.map(item => getAqiValue(item.Index)); // Converte l'indice testuale in un valore numerico per il grafico
 
     if (pollutantChart) {
@@ -853,12 +854,12 @@ function renderPollutantChart(data) {
                             if (label) {
                                 label += ': ';
                             }
-                            if (context.dataset.label === 'Indice AQI') {
-                                label += getAqiLabel(context.parsed.y); // Converte il valore numerico in etichetta testuale
-                            } else {
-                                label += context.parsed.y + ' µg/m³';
-                            }
-                            return label;
+                             if (context.dataset.label === 'Indice AQI') {
+                                 label += getAqiLabel(context.parsed.y); // Converte il valore numerico in etichetta testuale
+                             } else {
+                                 label += context.parsed.y.toFixed(1) + ' µg/m³';
+                             }
+                             return label;
                         }
                     }
                 }
@@ -968,9 +969,9 @@ function getAqiCategory(pollutant, value) {
 
 /**
  * Calcola l'AQI complessivo per una stazione basandosi sui valori degli inquinanti.
- * Ritorna la categoria AQI peggiore e l'inquinante responsabile.
+ * Ritorna la categoria AQI peggiore e l'inquinente responsabile.
  * @param {Array} stationData - Array di oggetti dati per una stazione in un dato momento.
- * @returns {Object} Un oggetto con la categoria AQI peggiore e l'inquinante responsabile.
+ * @returns {Object} Un oggetto con la categoria AQI peggiore e l'inquinente responsabile.
  */
 function getAqiForStation(stationData) {
     if (!stationData || stationData.length === 0) {
@@ -1071,7 +1072,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 
 // ===============================
 // SELEZIONE ELEMENTI DAL DOM
