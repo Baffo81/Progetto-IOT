@@ -7,7 +7,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from .gemini_api import send_request
+from gemini_api import send_request
 
 app = FastAPI()
 
@@ -32,7 +32,7 @@ async def chatbot(chat_input: ChatBotInput):
     """
     Endpoint per inviare un messaggio al chatbot e ricevere una risposta.
 
-    - **chat_input**: Un oggetto contenente il messaggio dell'utente.
+    - chat_input: Un oggetto contenente il messaggio dell'utente.
     """
     try:
         resp = send_request(chat_input.user_msg)
