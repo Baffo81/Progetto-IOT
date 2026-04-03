@@ -55,7 +55,8 @@ Questo progetto permette di scaricare, processare, visualizzare e interrogare da
 ## Esecuzione del Chatbot Gemini (API)
 1. **Avvia il server FastAPI con Uvicorn**
    ```sh
-   uvicorn gemini.api:app --reload --port 8001
+   cd gemini
+   uvicorn api:app --reload --port 8001
    ```
    Il backend sarà disponibile su `http://127.0.0.1:8001` (o altra porta specificata).
 
