@@ -84,8 +84,10 @@ function initializeMap() {
     }).addTo(map);
 
     const legend = L.control({ position: "bottomright" });
+
     legend.onAdd = function () {
       const div = L.DomUtil.create("div", "map-legend");
+
       div.innerHTML = `
         <div class="map-legend__title">Legenda AQI</div>
         <div class="map-legend__row"><span class="dot" style="background:#2ecc71"></span> Good</div>
@@ -95,10 +97,13 @@ function initializeMap() {
         <div class="map-legend__row"><span class="dot" style="background:#7E0023"></span> Very Poor</div>
         <div class="map-legend__row"><span class="dot" style="background:#8e44ad"></span> Extremely Poor</div>
       `;
-      // evita che il drag della mappa si attivi quando clicchi la legenda
+
       L.DomEvent.disableClickPropagation(div);
+      L.DomEvent.disableScrollPropagation(div);
+
       return div;
     };
+
     legend.addTo(map);
 }
 
