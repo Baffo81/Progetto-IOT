@@ -33,7 +33,8 @@ URL = "https://dati.arpacampania.it/api/3/action/datastore_search"
 ResourceIdGrezzi = [
     "14df881f-3528-42d4-89d0-05d448a0e2bc",  # Gennaio 2026
     "1b39cd55-fb9a-4be0-89dd-6bfad408badd" ,  # Febbraio 2026
-    "574f5999-7f02-4ce4-a62a-c8017a9bbf42"   # Marzo 2026
+    "574f5999-7f02-4ce4-a62a-c8017a9bbf42" ,  # Marzo 2026
+    "9ba57989-1ffc-4b62-b8a4-f717541a6fee"    # Aprile 2026
 ]
 
 # =========================

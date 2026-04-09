@@ -1534,295 +1534,295 @@
       "date": "2026-01-01",
       "type": "daily",
       "file": "daily/2026-01-01.json",
-      "record_count": 1765
+      "record_count": 1737
     },
     {
       "date": "2026-01-02",
       "type": "daily",
       "file": "daily/2026-01-02.json",
-      "record_count": 2134
+      "record_count": 2128
     },
     {
       "date": "2026-01-03",
       "type": "daily",
       "file": "daily/2026-01-03.json",
-      "record_count": 2446
+      "record_count": 2443
     },
     {
       "date": "2026-01-04",
       "type": "daily",
       "file": "daily/2026-01-04.json",
-      "record_count": 1950
+      "record_count": 1943
     },
     {
       "date": "2026-01-05",
       "type": "daily",
       "file": "daily/2026-01-05.json",
-      "record_count": 2507
+      "record_count": 2410
     },
     {
       "date": "2026-01-06",
       "type": "daily",
       "file": "daily/2026-01-06.json",
-      "record_count": 2126
+      "record_count": 2070
     },
     {
       "date": "2026-01-07",
       "type": "daily",
       "file": "daily/2026-01-07.json",
-      "record_count": 2774
+      "record_count": 2771
     },
     {
       "date": "2026-01-08",
       "type": "daily",
       "file": "daily/2026-01-08.json",
-      "record_count": 2153
+      "record_count": 2134
     },
     {
       "date": "2026-01-09",
       "type": "daily",
       "file": "daily/2026-01-09.json",
-      "record_count": 2753
+      "record_count": 2739
     },
     {
       "date": "2026-01-10",
       "type": "daily",
       "file": "daily/2026-01-10.json",
-      "record_count": 2494
+      "record_count": 2455
     },
     {
       "date": "2026-01-11",
       "type": "daily",
       "file": "daily/2026-01-11.json",
-      "record_count": 2509
+      "record_count": 2483
     },
     {
       "date": "2026-01-12",
       "type": "daily",
       "file": "daily/2026-01-12.json",
-      "record_count": 2424
+      "record_count": 2370
     },
     {
       "date": "2026-01-13",
       "type": "daily",
       "file": "daily/2026-01-13.json",
-      "record_count": 2645
+      "record_count": 2524
     },
     {
       "date": "2026-01-14",
       "type": "daily",
       "file": "daily/2026-01-14.json",
-      "record_count": 2376
+      "record_count": 2248
     },
     {
       "date": "2026-01-15",
       "type": "daily",
       "file": "daily/2026-01-15.json",
-      "record_count": 2327
+      "record_count": 2197
     },
     {
       "date": "2026-01-16",
       "type": "daily",
       "file": "daily/2026-01-16.json",
-      "record_count": 2526
+      "record_count": 2413
     },
     {
       "date": "2026-01-17",
       "type": "daily",
       "file": "daily/2026-01-17.json",
-      "record_count": 2474
+      "record_count": 2441
     },
     {
       "date": "2026-01-18",
       "type": "daily",
       "file": "daily/2026-01-18.json",
-      "record_count": 2766
+      "record_count": 2762
     },
     {
       "date": "2026-01-19",
       "type": "daily",
       "file": "daily/2026-01-19.json",
-      "record_count": 3114
+      "record_count": 3111
     },
     {
       "date": "2026-01-20",
       "type": "daily",
       "file": "daily/2026-01-20.json",
-      "record_count": 3230
+      "record_count": 3229
     },
     {
       "date": "2026-01-21",
       "type": "daily",
       "file": "daily/2026-01-21.json",
-      "record_count": 3191
+      "record_count": 3188
     },
     {
       "date": "2026-01-22",
       "type": "daily",
       "file": "daily/2026-01-22.json",
-      "record_count": 3049
+      "record_count": 2987
     },
     {
       "date": "2026-01-23",
       "type": "daily",
       "file": "daily/2026-01-23.json",
-      "record_count": 1962
+      "record_count": 1896
     },
     {
       "date": "2026-01-24",
       "type": "daily",
       "file": "daily/2026-01-24.json",
-      "record_count": 2435
+      "record_count": 2404
     },
     {
       "date": "2026-01-25",
       "type": "daily",
       "file": "daily/2026-01-25.json",
-      "record_count": 2208
+      "record_count": 2196
     },
     {
       "date": "2026-01-26",
       "type": "daily",
       "file": "daily/2026-01-26.json",
-      "record_count": 3005
+      "record_count": 2964
     },
     {
       "date": "2026-01-27",
       "type": "daily",
       "file": "daily/2026-01-27.json",
-      "record_count": 3160
+      "record_count": 3107
     },
     {
       "date": "2026-01-28",
       "type": "daily",
       "file": "daily/2026-01-28.json",
-      "record_count": 2565
+      "record_count": 2558
     },
     {
       "date": "2026-01-29",
       "type": "daily",
       "file": "daily/2026-01-29.json",
-      "record_count": 2767
+      "record_count": 2737
     },
     {
       "date": "2026-01-30",
       "type": "daily",
       "file": "daily/2026-01-30.json",
-      "record_count": 2586
+      "record_count": 2513
     },
     {
       "date": "2026-01-31",
       "type": "daily",
       "file": "daily/2026-01-31.json",
-      "record_count": 2510
+      "record_count": 2497
     },
     {
       "date": "2026-02-01",
       "type": "daily",
       "file": "daily/2026-02-01.json",
-      "record_count": 2424
+      "record_count": 2417
     },
     {
       "date": "2026-02-02",
       "type": "daily",
       "file": "daily/2026-02-02.json",
-      "record_count": 2609
+      "record_count": 2548
     },
     {
       "date": "2026-02-03",
       "type": "daily",
       "file": "daily/2026-02-03.json",
-      "record_count": 2498
+      "record_count": 2441
     },
     {
       "date": "2026-02-04",
       "type": "daily",
       "file": "daily/2026-02-04.json",
-      "record_count": 2256
+      "record_count": 2192
     },
     {
       "date": "2026-02-05",
       "type": "daily",
       "file": "daily/2026-02-05.json",
-      "record_count": 2898
+      "record_count": 2877
     },
     {
       "date": "2026-02-06",
       "type": "daily",
       "file": "daily/2026-02-06.json",
-      "record_count": 2672
+      "record_count": 2670
     },
     {
       "date": "2026-02-07",
       "type": "daily",
       "file": "daily/2026-02-07.json",
-      "record_count": 2489
+      "record_count": 2486
     },
     {
       "date": "2026-02-08",
       "type": "daily",
       "file": "daily/2026-02-08.json",
-      "record_count": 2524
+      "record_count": 2521
     },
     {
       "date": "2026-02-09",
       "type": "daily",
       "file": "daily/2026-02-09.json",
-      "record_count": 3132
+      "record_count": 3096
     },
     {
       "date": "2026-02-10",
       "type": "daily",
       "file": "daily/2026-02-10.json",
-      "record_count": 2684
+      "record_count": 2625
     },
     {
       "date": "2026-02-11",
       "type": "daily",
       "file": "daily/2026-02-11.json",
-      "record_count": 3163
+      "record_count": 3116
     },
     {
       "date": "2026-02-12",
       "type": "daily",
       "file": "daily/2026-02-12.json",
-      "record_count": 2641
+      "record_count": 2622
     },
     {
       "date": "2026-02-13",
       "type": "daily",
       "file": "daily/2026-02-13.json",
-      "record_count": 2699
+      "record_count": 2671
     },
     {
       "date": "2026-02-14",
       "type": "daily",
       "file": "daily/2026-02-14.json",
-      "record_count": 2670
+      "record_count": 2669
     },
     {
       "date": "2026-02-15",
       "type": "daily",
       "file": "daily/2026-02-15.json",
-      "record_count": 3102
+      "record_count": 3098
     },
     {
       "date": "2026-02-16",
       "type": "daily",
       "file": "daily/2026-02-16.json",
-      "record_count": 2467
+      "record_count": 2460
     },
     {
       "date": "2026-02-17",
       "type": "daily",
       "file": "daily/2026-02-17.json",
-      "record_count": 3168
+      "record_count": 3149
     },
     {
       "date": "2026-02-18",
       "type": "daily",
       "file": "daily/2026-02-18.json",
-      "record_count": 2631
+      "record_count": 2602
     },
     {
       "date": "2026-02-19",
@@ -1834,112 +1834,298 @@
       "date": "2026-02-20",
       "type": "daily",
       "file": "daily/2026-02-20.json",
-      "record_count": 2652
+      "record_count": 2644
     },
     {
       "date": "2026-02-21",
       "type": "daily",
       "file": "daily/2026-02-21.json",
-      "record_count": 2506
+      "record_count": 2497
     },
     {
       "date": "2026-02-22",
       "type": "daily",
       "file": "daily/2026-02-22.json",
-      "record_count": 1903
+      "record_count": 1894
     },
     {
       "date": "2026-02-23",
       "type": "daily",
       "file": "daily/2026-02-23.json",
-      "record_count": 2574
+      "record_count": 2545
     },
     {
       "date": "2026-02-24",
       "type": "daily",
       "file": "daily/2026-02-24.json",
-      "record_count": 2449
+      "record_count": 2429
     },
     {
       "date": "2026-02-25",
       "type": "daily",
       "file": "daily/2026-02-25.json",
-      "record_count": 2518
+      "record_count": 2467
     },
     {
       "date": "2026-02-26",
       "type": "daily",
       "file": "daily/2026-02-26.json",
-      "record_count": 2572
+      "record_count": 2483
     },
     {
       "date": "2026-02-27",
       "type": "daily",
       "file": "daily/2026-02-27.json",
-      "record_count": 2169
+      "record_count": 2077
     },
     {
       "date": "2026-02-28",
       "type": "daily",
       "file": "daily/2026-02-28.json",
-      "record_count": 2198
+      "record_count": 2169
     },
     {
       "date": "2026-03-01",
       "type": "daily",
       "file": "daily/2026-03-01.json",
-      "record_count": 2876
+      "record_count": 2797
     },
     {
       "date": "2026-03-02",
       "type": "daily",
       "file": "daily/2026-03-02.json",
-      "record_count": 2591
+      "record_count": 2508
     },
     {
       "date": "2026-03-03",
       "type": "daily",
       "file": "daily/2026-03-03.json",
-      "record_count": 2018
+      "record_count": 1922
     },
     {
       "date": "2026-03-04",
       "type": "daily",
       "file": "daily/2026-03-04.json",
-      "record_count": 2935
+      "record_count": 2806
     },
     {
       "date": "2026-03-05",
       "type": "daily",
       "file": "daily/2026-03-05.json",
-      "record_count": 2558
+      "record_count": 2452
     },
     {
       "date": "2026-03-06",
       "type": "daily",
       "file": "daily/2026-03-06.json",
-      "record_count": 2880
+      "record_count": 2839
     },
     {
       "date": "2026-03-07",
       "type": "daily",
       "file": "daily/2026-03-07.json",
-      "record_count": 2566
+      "record_count": 2530
     },
     {
       "date": "2026-03-08",
       "type": "daily",
       "file": "daily/2026-03-08.json",
-      "record_count": 2731
+      "record_count": 2672
     },
     {
       "date": "2026-03-09",
       "type": "daily",
       "file": "daily/2026-03-09.json",
-      "record_count": 1494
+      "record_count": 2560
+    },
+    {
+      "date": "2026-03-10",
+      "type": "daily",
+      "file": "daily/2026-03-10.json",
+      "record_count": 2924
+    },
+    {
+      "date": "2026-03-11",
+      "type": "daily",
+      "file": "daily/2026-03-11.json",
+      "record_count": 2856
+    },
+    {
+      "date": "2026-03-12",
+      "type": "daily",
+      "file": "daily/2026-03-12.json",
+      "record_count": 2687
+    },
+    {
+      "date": "2026-03-13",
+      "type": "daily",
+      "file": "daily/2026-03-13.json",
+      "record_count": 2980
+    },
+    {
+      "date": "2026-03-14",
+      "type": "daily",
+      "file": "daily/2026-03-14.json",
+      "record_count": 2341
+    },
+    {
+      "date": "2026-03-15",
+      "type": "daily",
+      "file": "daily/2026-03-15.json",
+      "record_count": 2625
+    },
+    {
+      "date": "2026-03-16",
+      "type": "daily",
+      "file": "daily/2026-03-16.json",
+      "record_count": 2969
+    },
+    {
+      "date": "2026-03-17",
+      "type": "daily",
+      "file": "daily/2026-03-17.json",
+      "record_count": 2592
+    },
+    {
+      "date": "2026-03-18",
+      "type": "daily",
+      "file": "daily/2026-03-18.json",
+      "record_count": 2458
+    },
+    {
+      "date": "2026-03-19",
+      "type": "daily",
+      "file": "daily/2026-03-19.json",
+      "record_count": 2965
+    },
+    {
+      "date": "2026-03-20",
+      "type": "daily",
+      "file": "daily/2026-03-20.json",
+      "record_count": 2320
+    },
+    {
+      "date": "2026-03-21",
+      "type": "daily",
+      "file": "daily/2026-03-21.json",
+      "record_count": 2825
+    },
+    {
+      "date": "2026-03-22",
+      "type": "daily",
+      "file": "daily/2026-03-22.json",
+      "record_count": 3630
+    },
+    {
+      "date": "2026-03-23",
+      "type": "daily",
+      "file": "daily/2026-03-23.json",
+      "record_count": 2992
+    },
+    {
+      "date": "2026-03-24",
+      "type": "daily",
+      "file": "daily/2026-03-24.json",
+      "record_count": 2567
+    },
+    {
+      "date": "2026-03-25",
+      "type": "daily",
+      "file": "daily/2026-03-25.json",
+      "record_count": 3299
+    },
+    {
+      "date": "2026-03-26",
+      "type": "daily",
+      "file": "daily/2026-03-26.json",
+      "record_count": 2548
+    },
+    {
+      "date": "2026-03-27",
+      "type": "daily",
+      "file": "daily/2026-03-27.json",
+      "record_count": 2788
+    },
+    {
+      "date": "2026-03-28",
+      "type": "daily",
+      "file": "daily/2026-03-28.json",
+      "record_count": 2591
+    },
+    {
+      "date": "2026-03-29",
+      "type": "daily",
+      "file": "daily/2026-03-29.json",
+      "record_count": 2667
+    },
+    {
+      "date": "2026-03-30",
+      "type": "daily",
+      "file": "daily/2026-03-30.json",
+      "record_count": 2772
+    },
+    {
+      "date": "2026-03-31",
+      "type": "daily",
+      "file": "daily/2026-03-31.json",
+      "record_count": 2298
+    },
+    {
+      "date": "2026-04-01",
+      "type": "daily",
+      "file": "daily/2026-04-01.json",
+      "record_count": 3348
+    },
+    {
+      "date": "2026-04-02",
+      "type": "daily",
+      "file": "daily/2026-04-02.json",
+      "record_count": 2783
+    },
+    {
+      "date": "2026-04-03",
+      "type": "daily",
+      "file": "daily/2026-04-03.json",
+      "record_count": 2812
+    },
+    {
+      "date": "2026-04-04",
+      "type": "daily",
+      "file": "daily/2026-04-04.json",
+      "record_count": 2583
+    },
+    {
+      "date": "2026-04-05",
+      "type": "daily",
+      "file": "daily/2026-04-05.json",
+      "record_count": 2366
+    },
+    {
+      "date": "2026-04-06",
+      "type": "daily",
+      "file": "daily/2026-04-06.json",
+      "record_count": 3471
+    },
+    {
+      "date": "2026-04-07",
+      "type": "daily",
+      "file": "daily/2026-04-07.json",
+      "record_count": 3360
+    },
+    {
+      "date": "2026-04-08",
+      "type": "daily",
+      "file": "daily/2026-04-08.json",
+      "record_count": 2167
+    },
+    {
+      "date": "2026-04-09",
+      "type": "daily",
+      "file": "daily/2026-04-09.json",
+      "record_count": 903
     }
   ],
-  "total_dates": 323,
+  "total_dates": 354,
   "first_date": "2025-01-01",
-  "last_date": "2026-03-09"
+  "last_date": "2026-04-09"
 }
